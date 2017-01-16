@@ -1,5 +1,5 @@
 #fonts=( TakaoExGothic TakaoGothic TakaoPGothic Lato 'Lato Bold' )
-fonts=( lato latob lato.kana latob.kana hiraginomarugothicpro hiraginokakugothicpro )
+fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginomarugothicpro osaka )
 bases=()
 boxes=()
 trs=()
@@ -56,11 +56,15 @@ combine_tessdata jpn.
 mkdir -p tessdata
 mv jpn.traineddata ./tessdata
 
-
+echo pgoname
+tesseract pgoname.tiff test.pgoname --tessdata-dir ./ -l jpn && cat test.pgoname.txt
+echo jpn.lato.exp0
 tesseract jpn.lato.exp0.tif test.lato --tessdata-dir ./ -l jpn && cat test.lato.txt
+echo jpn.latob.exp0
 tesseract jpn.latob.exp0.tif test.latob --tessdata-dir ./ -l jpn && cat test.latob.txt
+echo jpn.lato.kana
 tesseract jpn.lato.kana.exp0.tif test.lato.kana --tessdata-dir ./ -l jpn && cat test.lato.kana.txt
-
+echo jpn.hiraginomarugothicpro
 tesseract jpn.hiraginomarugothicpro.exp0.tif test.hiraginomarugothicpro  --tessdata-dir ./ -l jpn && cat test.hiraginomarugothicpro.txt
 #tesseract test.tif test --tessdata-dir ./ -l jpn && cat test.txt
 #tesseract testb.tif testb --tessdata-dir ./ -l jpn && cat testb.txt
