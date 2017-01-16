@@ -835,9 +835,9 @@ significant   elliptical     5
 	  0.000400  0.000400  0.000400  0.000400
 
 い 1
-significant   elliptical     6
-	  0.315104  0.295117  0.170573  0.234375
-	  0.000400  0.000400  0.000400  0.000439
+significant   elliptical     7
+	  0.305246  0.288002  0.166295  0.231027
+	  0.000775  0.000625  0.000400  0.000445
 
 ぅ 1
 significant   elliptical     5
@@ -880,9 +880,9 @@ significant   elliptical     5
 	  0.000676  0.000997  0.000400  0.000400
 
 き 1
-significant   elliptical     5
-	  0.346875  0.517656  0.196094  0.167187
-	  0.000606  0.001956  0.000400  0.000400
+significant   elliptical     6
+	  0.341146  0.514388  0.192708  0.162109
+	  0.000682  0.001629  0.000400  0.000400
 
 ぎ 1
 significant   elliptical     5
@@ -890,9 +890,9 @@ significant   elliptical     5
 	  0.000621  0.003118  0.000400  0.000400
 
 く 1
-significant   elliptical     6
-	  0.371745  0.224089  0.214193  0.129557
-	  0.001559  0.000516  0.000595  0.000400
+significant   elliptical     7
+	  0.363281  0.218359  0.209821  0.125558
+	  0.001801  0.000660  0.000629  0.000400
 
 ぐ 1
 significant   elliptical     6
@@ -975,9 +975,9 @@ significant   elliptical     8
 	  0.000656  0.000860  0.000400  0.000400
 
 だ 1
-significant   elliptical     5
-	  0.342969  0.499687  0.222656  0.205469
-	  0.000865  0.000830  0.000400  0.000400
+significant   elliptical     6
+	  0.338542  0.487305  0.218750  0.201172
+	  0.000810  0.001584  0.000400  0.000400
 
 ち 1
 significant   elliptical     5
@@ -1210,9 +1210,9 @@ significant   elliptical     5
 	  0.000629  0.000935  0.000400  0.000400
 
 わ 1
-significant   elliptical     5
-	  0.300781  0.397656  0.178125  0.191406
-	  0.001289  0.001294  0.000400  0.000587
+significant   elliptical     6
+	  0.295573  0.397005  0.176432  0.190104
+	  0.001194  0.001038  0.000400  0.000480
 
 を 1
 significant   elliptical     5
