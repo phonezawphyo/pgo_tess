@@ -57,9 +57,9 @@ mkdir -p tessdata
 mv jpn.traineddata ./tessdata
 
 
-tesseract jpn.lato.exp0.tif test.Lato --tessdata-dir ./ -l jpn && cat test.lato.txt
-tesseract jpn.latob.exp0.tif test.Lato --tessdata-dir ./ -l jpn && cat test.latob.txt
-tesseract jpn.lato.kana.exp0.tif test.Lato --tessdata-dir ./ -l jpn && cat test.lato.kana.txt
+tesseract jpn.lato.exp0.tif test.lato --tessdata-dir ./ -l jpn && cat test.lato.txt
+tesseract jpn.latob.exp0.tif test.latob --tessdata-dir ./ -l jpn && cat test.latob.txt
+tesseract jpn.lato.kana.exp0.tif test.lato.kana --tessdata-dir ./ -l jpn && cat test.lato.kana.txt
 
 tesseract jpn.hiraginomarugothicpro.exp0.tif test.hiraginomarugothicpro  --tessdata-dir ./ -l jpn && cat test.hiraginomarugothicpro.txt
 #tesseract test.tif test --tessdata-dir ./ -l jpn && cat test.txt
