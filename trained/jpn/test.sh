@@ -8,6 +8,12 @@ echo pgoname_tentacool
 tesseract pgoname_tentacool.png test.pgoname_tentacool --tessdata-dir ./ -l jpn && cat test.pgoname_tentacool.txt
 echo pgoname_bulbasaur
 tesseract jpn.pgo_bulbasaur.exp0.tif test.pgoname_bulbasaur --tessdata-dir ./ -l jpn && cat test.pgoname_bulbasaur.txt
+echo jpn.pgo_solarbeam
+tesseract jpn.pgo_solarbeam.exp0.tif test.pgo_solarbeam --tessdata-dir ./ -l jpn && cat test.pgo_solarbeam.txt
+echo jpn.pgo_taiatari
+tesseract jpn.pgo_taiatari.exp0.tif test.pgo_taiatari --tessdata-dir ./ -l jpn && cat test.pgo_taiatari.txt
+echo jpn.pgo_powerup
+tesseract jpn.pgo_powerup.exp0.tif test.pgo_powerup --tessdata-dir ./ -l jpn && cat test.pgo_powerup.txt
 echo seahorse
 tesseract seahorse.tiff test.seahorse --tessdata-dir ./ -l jpn && cat test.seahorse.txt
 echo jpn.lato.exp0

@@ -1,5 +1,5 @@
 #fonts=( TakaoExGothic TakaoGothic TakaoPGothic Lato 'Lato Bold' )
-fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka pgo_nidorino pgo_bulbasaur )
+fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka pgo_nidorino pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari )
 bases=()
 boxes=()
 trs=()
