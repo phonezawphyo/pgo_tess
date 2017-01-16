@@ -1,4 +1,2 @@
-01234567８9♂ ♀ +-
-/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrs
-tuvwxyz
+0123456789♂ ♀ +-/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 
