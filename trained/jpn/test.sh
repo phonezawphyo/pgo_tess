@@ -1,3 +1,13 @@
+echo jpn.lato.exp0
+tesseract jpn.lato.exp0.tif test.lato --tessdata-dir ./ -l jpn && cat test.lato.txt
+echo jpn.latob.exp0
+tesseract jpn.latob.exp0.tif test.latob --tessdata-dir ./ -l jpn && cat test.latob.txt
+echo jpn.lato.kana
+tesseract jpn.lato.kana.exp0.tif test.lato.kana --tessdata-dir ./ -l jpn && cat test.lato.kana.txt
+echo jpn.latob.kana
+tesseract jpn.latob.kana.exp0.tif test.latob.kana --tessdata-dir ./ -l jpn && cat test.latob.kana.txt
+echo jpn.hiraginomarugothicpro
+tesseract jpn.hiraginomarugothicpro.exp0.tif test.hiraginomarugothicpro  --tessdata-dir ./ -l jpn && cat test.hiraginomarugothicpro.txt
 echo pgoname
 tesseract pgoname.tiff test.pgoname --tessdata-dir ./ -l jpn && cat test.pgoname.txt
 echo pokemonnamethres
@@ -18,18 +28,23 @@ echo seahorse
 tesseract seahorse.tiff test.seahorse --tessdata-dir ./ -l jpn && cat test.seahorse.txt
 echo jpn.pgo_stoneage
 tesseract jpn.pgo_stoneage.exp0.tif test.pgo_stoneage --tessdata-dir ./ -l jpn && cat test.pgo_stoneage.txt
+echo jpn.pgo_hikkaku.exp0
+tesseract jpn.pgo_hikkaku.exp0.tif test.pgo_hikkaku --tessdata-dir ./ -l jpn && cat test.pgo_hikkaku.txt
 echo jpn.pgo_aircutter
 tesseract jpn.pgo_aircutter.exp0.tif test.pgo_aircutter --tessdata-dir ./ -l jpn && cat test.pgo_aircutter.txt
-echo jpn.lato.exp0
-tesseract jpn.lato.exp0.tif test.lato --tessdata-dir ./ -l jpn && cat test.lato.txt
-echo jpn.latob.exp0
-tesseract jpn.latob.exp0.tif test.latob --tessdata-dir ./ -l jpn && cat test.latob.txt
-echo jpn.lato.kana
-tesseract jpn.lato.kana.exp0.tif test.lato.kana --tessdata-dir ./ -l jpn && cat test.lato.kana.txt
-echo jpn.latob.kana
-tesseract jpn.latob.kana.exp0.tif test.latob.kana --tessdata-dir ./ -l jpn && cat test.latob.kana.txt
-echo jpn.hiraginomarugothicpro
-tesseract jpn.hiraginomarugothicpro.exp0.tif test.hiraginomarugothicpro  --tessdata-dir ./ -l jpn && cat test.hiraginomarugothicpro.txt
+echo jpn.pgo_water_cannon.exp0
+tesseract jpn.pgo_water_cannon.exp0.tif test.pgo_water_cannon --tessdata-dir ./ -l jpn && cat test.pgo_water_cannon.txt
+echo jpn.cp530.exp0
+tesseract jpn.cp530.exp0.tif test.cp530 --tessdata-dir ./ -l jpn && cat test.cp530.txt
+echo jpn.hp39.exp0
+tesseract jpn.hp39.exp0.tif test.hp39 --tessdata-dir ./ -l jpn && cat test.hp39.txt
+echo jpn.hp87.exp0
+tesseract jpn.hp87.exp0.tif test.hp87 --tessdata-dir ./ -l jpn && cat test.hp87.txt
+echo jpn.pgo_denkou.exp0
+tesseract jpn.pgo_denkou.exp0.tif test.pgo_denkou --tessdata-dir ./ -l jpn && cat test.pgo_denkou.txt
+echo jpn.pgo_mudshot.exp0
+tesseract jpn.pgo_mudshot.exp0.tif test.pgo_mudshot --tessdata-dir ./ -l jpn && cat test.pgo_mudshot.txt
+
 #tesseract test.tif test --tessdata-dir ./ -l jpn && cat test.txt
 #tesseract testb.tif testb --tessdata-dir ./ -l jpn && cat testb.txt
 #tesseract jpn.camera.tif camera --tessdata-dir ./ -l jpn && cat camera.txt

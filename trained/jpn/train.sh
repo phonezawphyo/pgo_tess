@@ -1,5 +1,8 @@
+#make box
+#tesseract --tessdata-dir ./tessdata -l jpn jpn.hp87.exp0.tif jpn.hp87.exp0 batch.nochop makebox
+
 #fonts=( TakaoExGothic TakaoGothic TakaoPGothic Lato 'Lato Bold' )
-fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka pgo_nidorino pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage )
+fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka pgo_nidorino pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage pgo_hikkaku pgo_water_cannon pgo_denkou pgo_mudshot cp530 hp39 hp87 )
 bases=()
 boxes=()
 trs=()
