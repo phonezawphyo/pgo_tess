@@ -16,6 +16,10 @@ echo jpn.pgo_powerup
 tesseract jpn.pgo_powerup.exp0.tif test.pgo_powerup --tessdata-dir ./ -l jpn && cat test.pgo_powerup.txt
 echo seahorse
 tesseract seahorse.tiff test.seahorse --tessdata-dir ./ -l jpn && cat test.seahorse.txt
+echo jpn.pgo_stoneage
+tesseract jpn.pgo_stoneage.exp0.tif test.pgo_stoneage --tessdata-dir ./ -l jpn && cat test.pgo_stoneage.txt
+echo jpn.pgo_aircutter
+tesseract jpn.pgo_aircutter.exp0.tif test.pgo_aircutter --tessdata-dir ./ -l jpn && cat test.pgo_aircutter.txt
 echo jpn.lato.exp0
 tesseract jpn.lato.exp0.tif test.lato --tessdata-dir ./ -l jpn && cat test.lato.txt
 echo jpn.latob.exp0
