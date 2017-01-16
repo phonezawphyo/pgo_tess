@@ -34,6 +34,10 @@ echo jpn.pgo_aircutter
 tesseract jpn.pgo_aircutter.exp0.tif test.pgo_aircutter --tessdata-dir ./ -l jpn && cat test.pgo_aircutter.txt
 echo jpn.pgo_water_cannon.exp0
 tesseract jpn.pgo_water_cannon.exp0.tif test.pgo_water_cannon --tessdata-dir ./ -l jpn && cat test.pgo_water_cannon.txt
+echo jpn.pgo_crosschop.exp0
+tesseract jpn.pgo_crosschop.exp0.tif test.pgo_crosschop --tessdata-dir ./ -l jpn && cat test.pgo_crosschop.txt
+echo jpn.pgo_cchop.exp0
+tesseract jpn.pgo_cchop.exp0.tif test.pgo_crosschop --tessdata-dir ./ -l jpn && cat test.pgo_crosschop.txt
 echo jpn.cp530.exp0
 tesseract jpn.cp530.exp0.tif test.cp530 --tessdata-dir ./ -l jpn && cat test.cp530.txt
 echo jpn.hp39.exp0
