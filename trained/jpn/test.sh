@@ -38,6 +38,8 @@ echo jpn.pgo_crosschop.exp0
 tesseract jpn.pgo_crosschop.exp0.tif test.pgo_crosschop --tessdata-dir ./ -l jpn && cat test.pgo_crosschop.txt
 echo jpn.pgo_cchop.exp0
 tesseract jpn.pgo_cchop.exp0.tif test.pgo_crosschop --tessdata-dir ./ -l jpn && cat test.pgo_crosschop.txt
+echo jpn.pgo_iwakudaki.exp0
+tesseract jpn.pgo_iwakudaki.exp0.tif test.pgo_iwakudaki --tessdata-dir ./ -l jpn && cat test.pgo_iwakudaki.txt
 echo jpn.cp530.exp0
 tesseract jpn.cp530.exp0.tif test.cp530 --tessdata-dir ./ -l jpn && cat test.cp530.txt
 echo jpn.hp39.exp0
