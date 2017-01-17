@@ -2,7 +2,7 @@
 #tesseract --tessdata-dir ./tessdata -l jpn jpn.pgo_iwakudaki.exp0.tif jpn.pgo_iwakudaki.exp0 batch.nochop makebox
 
 #fonts=( TakaoExGothic TakaoGothic TakaoPGothic Lato 'Lato Bold' )
-fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka pgo_nidorino pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage pgo_hikkaku pgo_water_cannon pgo_denkou pgo_mudshot pgo_crosschop pgo_cchop pgo_iwakudaki cp530 hp39 hp87 )
+fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka pgo_nidorino pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage pgo_hikkaku pgo_water_cannon pgo_denkou pgo_mudshot pgo_crosschop pgo_cchop pgo_iwakudaki pgo_ketaguri cp530 hp39 hp87 )
 bases=()
 boxes=()
 trs=()

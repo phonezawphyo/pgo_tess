@@ -50,6 +50,8 @@ echo jpn.pgo_denkou.exp0
 tesseract jpn.pgo_denkou.exp0.tif test.pgo_denkou --tessdata-dir ./ -l jpn && cat test.pgo_denkou.txt
 echo jpn.pgo_mudshot.exp0
 tesseract jpn.pgo_mudshot.exp0.tif test.pgo_mudshot --tessdata-dir ./ -l jpn && cat test.pgo_mudshot.txt
+echo jpn.pgo_ketaguri.exp0
+tesseract jpn.pgo_ketaguri.exp0.tif test.pgo_ketaguri --tessdata-dir ./ -l jpn && cat test.pgo_ketaguri.txt
 
 #tesseract test.tif test --tessdata-dir ./ -l jpn && cat test.txt
 #tesseract testb.tif testb --tessdata-dir ./ -l jpn && cat testb.txt
