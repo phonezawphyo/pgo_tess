@@ -14,6 +14,8 @@ echo pokemonnamethres
 tesseract pokemonnamethres.png test.pokemonnamethres --tessdata-dir ./ -l jpn && cat test.pokemonnamethres.txt
 echo jpn.pgo_nidorino.exp0
 tesseract jpn.pgo_nidorino.exp0.tif test.pgo_nidorino --tessdata-dir ./ -l jpn && cat test.pgo_nidorino.txt
+echo jpn.pgo_nidorino2.exp0
+tesseract jpn.pgo_nidorino2.exp0.tif test.pgo_nidorino2 --tessdata-dir ./ -l jpn && cat test.pgo_nidorino2.txt
 echo pgoname_tentacool
 tesseract pgoname_tentacool.png test.pgoname_tentacool --tessdata-dir ./ -l jpn && cat test.pgoname_tentacool.txt
 echo pgoname_bulbasaur
