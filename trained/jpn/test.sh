@@ -17,7 +17,7 @@ tesseract jpn.pgo_nidorino.exp0.tif test.pgo_nidorino --tessdata-dir ./ -l jpn &
 echo jpn.pgo_nidorino2.exp0
 tesseract jpn.pgo_nidorino2.exp0.tif test.pgo_nidorino2 --tessdata-dir ./ -l jpn && cat test.pgo_nidorino2.txt
 echo pgoname_tentacool
-tesseract pgoname_tentacool.png test.pgoname_tentacool --tessdata-dir ./ -l jpn && cat test.pgoname_tentacool.txt
+tesseract -psm 7 pgoname_tentacool.png test.pgoname_tentacool --tessdata-dir ./ -l jpn && cat test.pgoname_tentacool.txt
 echo pgoname_bulbasaur
 tesseract jpn.pgo_bulbasaur.exp0.tif test.pgoname_bulbasaur --tessdata-dir ./ -l jpn && cat test.pgoname_bulbasaur.txt
 echo jpn.pgo_solarbeam
@@ -29,7 +29,7 @@ tesseract jpn.pgo_powerup.exp0.tif test.pgo_powerup --tessdata-dir ./ -l jpn && 
 echo seahorse
 tesseract seahorse.tiff test.seahorse --tessdata-dir ./ -l jpn && cat test.seahorse.txt
 echo jpn.pgo_stoneage
-tesseract jpn.pgo_stoneage.exp0.tif test.pgo_stoneage --tessdata-dir ./ -l jpn && cat test.pgo_stoneage.txt
+tesseract -psm 7 jpn.pgo_stoneage.exp0.tif test.pgo_stoneage --tessdata-dir ./ -l jpn && cat test.pgo_stoneage.txt
 echo jpn.pgo_hikkaku.exp0
 tesseract jpn.pgo_hikkaku.exp0.tif test.pgo_hikkaku --tessdata-dir ./ -l jpn && cat test.pgo_hikkaku.txt
 echo jpn.pgo_aircutter
@@ -43,7 +43,7 @@ tesseract jpn.pgo_cchop.exp0.tif test.pgo_crosschop --tessdata-dir ./ -l jpn && 
 echo jpn.pgo_iwakudaki.exp0
 tesseract jpn.pgo_iwakudaki.exp0.tif test.pgo_iwakudaki --tessdata-dir ./ -l jpn && cat test.pgo_iwakudaki.txt
 echo jpn.cp530.exp0
-tesseract jpn.cp530.exp0.tif test.cp530 --tessdata-dir ./ -l jpn && cat test.cp530.txt
+tesseract -psm 7 jpn.cp530.exp0.tif test.cp530 --tessdata-dir ./ -l jpn && cat test.cp530.txt
 echo jpn.hp39.exp0
 tesseract jpn.hp39.exp0.tif test.hp39 --tessdata-dir ./ -l jpn && cat test.hp39.txt
 echo jpn.hp87.exp0
@@ -54,6 +54,8 @@ echo jpn.pgo_mudshot.exp0
 tesseract jpn.pgo_mudshot.exp0.tif test.pgo_mudshot --tessdata-dir ./ -l jpn && cat test.pgo_mudshot.txt
 echo jpn.pgo_ketaguri.exp0
 tesseract jpn.pgo_ketaguri.exp0.tif test.pgo_ketaguri --tessdata-dir ./ -l jpn && cat test.pgo_ketaguri.txt
+echo jpn.pgo_dratini.exp0
+tesseract -psm 7 jpn.pgo_dratini.exp0.tif test.pgo_dratini --tessdata-dir ./ -l jpn && cat test.pgo_dratini.txt
 
 #tesseract test.tif test --tessdata-dir ./ -l jpn && cat test.txt
 #tesseract testb.tif testb --tessdata-dir ./ -l jpn && cat testb.txt

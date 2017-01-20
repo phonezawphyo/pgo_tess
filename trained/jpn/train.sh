@@ -1,32 +1,42 @@
 #make box
-#tesseract --tessdata-dir ./tessdata -l jpn jpn.pgo_iwakudaki.exp0.tif jpn.pgo_iwakudaki.exp0 batch.nochop makebox
+#tesseract --tessdata-dir ./tessdata -l jpn jpn.pgo_dratini.exp0.tif jpn.pgo_dratini.exp0 batch.nochop makebox
 
 #fonts=( TakaoExGothic TakaoGothic TakaoPGothic Lato 'Lato Bold' )
-fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka pgo_nidorino pgo_nidorino2 pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage pgo_hikkaku pgo_water_cannon pgo_denkou pgo_mudshot pgo_crosschop pgo_cchop pgo_iwakudaki pgo_ketaguri cp530 hp39 hp87 )
+fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka  )
+words=( pgo_nidorino pgo_nidorino2 pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage pgo_hikkaku pgo_water_cannon pgo_denkou pgo_mudshot pgo_crosschop pgo_cchop pgo_iwakudaki pgo_ketaguri cp530 hp39 hp87 pgo_dratini )
 bases=()
 boxes=()
 trs=()
 
 for i in "${fonts[@]}"
 do
-   : 
-   echo "$i"
-   base="jpn.${i}.exp0"
-   base_nospace="$(echo -e "${base}" | tr -d '[:space:]')"
-   bases+=( ${base_nospace} )
+	: 
+	echo "$i"
+	base="jpn.${i}.exp0"
+	base_nospace="$(echo -e "${base}" | tr -d '[:space:]')"
+	bases+=( ${base_nospace} )
 #   text2image --text=jpn.input.txt --outputbase="$base_nospace" --font="$i" --ptsize=18 --fonts_dir=/usr/share/fonts --exposure=0 --degrade_image=false --tlog_level=2
 
+	echo base = $base_nospace
+	boxes+=( "$base_nospace.box" )
+	trs+=( "$base_nospace.tr" )
+
+	tesseract "$base_nospace.tif" "$base_nospace" box.train
 done
 
-for i in "${bases[@]}"
+for i in "${words[@]}"
 do
 	: 
-	echo base = $i
-	boxes+=( "$i.box" )
-	trs+=( "$i.tr" )
+	echo "$i"
+	base="jpn.${i}.exp0"
+	base_nospace="$(echo -e "${base}" | tr -d '[:space:]')"
+	bases+=( ${base_nospace} )
 
-	tesseract  "$i.tif" "$i" box.train
+	echo base = $base_nospace
+	boxes+=( "$base_nospace.box" )
+	trs+=( "$base_nospace.tr" )
 
+	tesseract -psm 7 "$base_nospace.tif" "$base_nospace" box.train
 done
 
 joined_bases=$(IFS=" " ; echo "${bases[*]}")
