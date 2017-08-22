@@ -56,6 +56,12 @@ echo jpn.pgo_ketaguri.exp0
 tesseract jpn.pgo_ketaguri.exp0.tif test.pgo_ketaguri --tessdata-dir ./ -l jpn && cat test.pgo_ketaguri.txt
 echo jpn.pgo_dratini.exp0
 tesseract -psm 7 jpn.pgo_dratini.exp0.tif test.pgo_dratini --tessdata-dir ./ -l jpn && cat test.pgo_dratini.txt
+echo jpn.pgo_dratini2.exp0
+tesseract -psm 7 jpn.pgo_dratini2.exp0.tif test.pgo_dratini2 --tessdata-dir ./ -l jpn && cat test.pgo_dratini2.txt
+echo jpn.pgo_starmie.exp0
+tesseract -psm 7 jpn.pgo_starmie.exp0.tif test.pgo_starmie --tessdata-dir ./ -l jpn && cat test.pgo_starmie.txt
+echo jpn.pgo_starmie2.exp0
+tesseract -psm 7 jpn.pgo_starmie2.exp0.tif test.pgo_starmie2 --tessdata-dir ./ -l jpn && cat test.pgo_starmie2.txt
 
 #tesseract test.tif test --tessdata-dir ./ -l jpn && cat test.txt
 #tesseract testb.tif testb --tessdata-dir ./ -l jpn && cat testb.txt

@@ -3,7 +3,7 @@
 
 #fonts=( TakaoExGothic TakaoGothic TakaoPGothic Lato 'Lato Bold' )
 fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka  )
-words=( pgo_nidorino pgo_nidorino2 pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage pgo_hikkaku pgo_water_cannon pgo_denkou pgo_mudshot pgo_crosschop pgo_cchop pgo_iwakudaki pgo_ketaguri cp530 hp39 hp87 pgo_dratini )
+words=( pgo_nidorino pgo_nidorino2 pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage pgo_hikkaku pgo_water_cannon pgo_denkou pgo_mudshot pgo_crosschop pgo_cchop pgo_iwakudaki pgo_ketaguri cp530 hp39 hp87 pgo_dratini pgo_dratini2 pgo_starmie pgo_starmie2 )
 bases=()
 boxes=()
 trs=()
@@ -21,6 +21,7 @@ do
 	boxes+=( "$base_nospace.box" )
 	trs+=( "$base_nospace.tr" )
 
+	echo tesseract "$base_nospace.tif" "$base_nospace" box.train
 	tesseract "$base_nospace.tif" "$base_nospace" box.train
 done
 
@@ -36,6 +37,7 @@ do
 	boxes+=( "$base_nospace.box" )
 	trs+=( "$base_nospace.tr" )
 
+	echo tesseract -psm 7 "$base_nospace.tif" "$base_nospace" box.train
 	tesseract -psm 7 "$base_nospace.tif" "$base_nospace" box.train
 done
 
@@ -49,15 +51,22 @@ joined_trs=$(IFS=" " ; echo "${trs[*]}")
 #tesseract jpn.latoi.exp0.tif jpn.latoi.exp0 box.train
 #tesseract jpn.latobi.exp0.tif jpn.latobi.exp0 box.train
 
+echo unicharset_extractor $joined_boxes
 unicharset_extractor $joined_boxes
 
+echo set_unicharset_properties -U unicharset -O unicharset --script_dir=/Users/phonephyo/projects/jTessBoxEditor/trained/langdata
 set_unicharset_properties -U unicharset -O unicharset --script_dir=/Users/phonephyo/projects/jTessBoxEditor/trained/langdata
 
+echo shapeclustering -F jpn.font_properties -U unicharset -O unicharset $joined_trs
 shapeclustering -F jpn.font_properties -U unicharset -O unicharset $joined_trs
+
+echo mftraining -F jpn.font_properties -U unicharset -O unicharset $joined_trs
 mftraining -F jpn.font_properties -U unicharset -O unicharset $joined_trs
 
+echo cntraining -F jpn.font_properties -U unicharset $joined_trs
 cntraining -F jpn.font_properties -U unicharset $joined_trs
 
+echo wordlist2dawg jpn.words_list jpn.word-dawg jpn.unicharset
 wordlist2dawg jpn.words_list jpn.word-dawg jpn.unicharset
 
 mv shapetable jpn.shapetable
