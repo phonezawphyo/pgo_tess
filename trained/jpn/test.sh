@@ -62,6 +62,22 @@ echo jpn.pgo_starmie.exp0
 tesseract -psm 7 jpn.pgo_starmie.exp0.tif test.pgo_starmie --tessdata-dir ./ -l jpn && cat test.pgo_starmie.txt
 echo jpn.pgo_starmie2.exp0
 tesseract -psm 7 jpn.pgo_starmie2.exp0.tif test.pgo_starmie2 --tessdata-dir ./ -l jpn && cat test.pgo_starmie2.txt
+echo jpn.pgo_miltank.exp0
+tesseract -psm 7 jpn.pgo_miltank.exp0.tif test.pgo_miltank --tessdata-dir ./ -l jpn && cat test.pgo_miltank.txt
+echo jpn.pgo_sasuga.exp0
+tesseract -psm 7 jpn.pgo_sasuga.exp0.tif test.pgo_sasuga --tessdata-dir ./ -l jpn && cat test.pgo_sasuga.txt
+echo jpn.pgo_yogilust.exp0
+tesseract -psm 7 jpn.pgo_yogilust.exp0.tif test.pgo_yogilust --tessdata-dir ./ -l jpn && cat test.pgo_yogilust.txt
+echo jpn.pgo_myanmar.exp0
+tesseract -psm 7 jpn.pgo_myanmar.exp0.tif test.pgo_myanmar --tessdata-dir ./ -l jpn && cat test.pgo_myanmar.txt
+echo jpn.pgo_mi.exp0
+tesseract -psm 7 jpn.pgo_mi.exp0.tif test.pgo_mi --tessdata-dir ./ -l jpn && cat test.pgo_mi.txt
+echo jpn.pgo_yo.exp0
+tesseract -psm 7 jpn.pgo_yo.exp0.tif test.pgo_yo --tessdata-dir ./ -l jpn && cat test.pgo_yo.txt
+echo jpn.dratini_maru.exp0
+tesseract -psm 7 jpn.dratini_maru.exp0.tif test.dratini_maru --tessdata-dir ./ -l jpn && cat test.dratini_maru.txt
+echo jpn.dratini_mincho.exp0
+tesseract -psm 7 jpn.dratini_mincho.exp0.tif test.dratini_mincho --tessdata-dir ./ -l jpn && cat test.dratini_mincho.txt
 
 #tesseract test.tif test --tessdata-dir ./ -l jpn && cat test.txt
 #tesseract testb.tif testb --tessdata-dir ./ -l jpn && cat testb.txt

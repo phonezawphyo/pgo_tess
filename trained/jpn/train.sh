@@ -3,7 +3,7 @@
 
 #fonts=( TakaoExGothic TakaoGothic TakaoPGothic Lato 'Lato Bold' )
 fonts=( lato latob lato.kana latob.kana hiraginokakugothicpro hiraginokakugothicstdb hiraginomarugothicpro osaka  )
-words=( pgo_nidorino pgo_nidorino2 pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage pgo_hikkaku pgo_water_cannon pgo_denkou pgo_mudshot pgo_crosschop pgo_cchop pgo_iwakudaki pgo_ketaguri cp530 hp39 hp87 pgo_dratini pgo_dratini2 pgo_starmie pgo_starmie2 )
+words=( pgo_nidorino pgo_nidorino2 pgo_bulbasaur pgo_solarbeam pgo_powerup pgo_taiatari pgo_aircutter pgo_stoneage pgo_hikkaku pgo_water_cannon pgo_denkou pgo_mudshot pgo_crosschop pgo_cchop pgo_iwakudaki pgo_ketaguri cp530 hp39 hp87 pgo_dratini pgo_dratini2 pgo_starmie pgo_starmie2 pgo_miltank pgo_sasuga pgo_yogilust pgo_myanmar dratini_hirasans dratini_kakub dratini_maru dratini_mincho dratini_minchob)
 bases=()
 boxes=()
 trs=()
